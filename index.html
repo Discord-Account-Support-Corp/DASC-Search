@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DASC© Search</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Logo -->
+    <header>
+        <h1 class="logo">
+            <span style="color:#4285F4">D</span>
+            <span style="color:#DB4437">A</span>
+            <span style="color:#F4B400">S</span>
+            <span style="color:#0F9D58">C</span>
+            <span style="color:#4285F4">©</span> Search
+        </h1>
+    </header>
+
+    <!-- Search Bar -->
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search DASC© resources..." onkeydown="if(event.key==='Enter'){performSearch();}">
+            <div class="button-row">
+                <button onclick="performSearch()">DASC Search</button>
+                <button onclick="luckySearch()">I’m Feeling Lucky</button>
+            </div>
+        </div>
+
+        <!-- Custom Sources -->
+        <div class="source-filters" id="sourceFilters"></div>
+
+        <!-- Results -->
+        <div id="results" class="results"></div>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
